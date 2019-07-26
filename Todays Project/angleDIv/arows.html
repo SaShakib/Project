@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <style>
+    .class {
+        width: 200px;
+        height: 220px;
+        background: black;
+        border-radius: 20px;
+        margin: 0 auto;
+        padding: 20px;
+        font: 1em sans-serif;
+        line-height: 22px;
+        color: #fff;
+        text-align: center; 
+        position: relative;
+        text-align: left;
+        
+    }
+    .class::after {
+        content: ' ';
+        width: 0;
+        height: 0;
+        border-right: 10px solid black;
+        border-top: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        position:absolute;
+        right: 100%;
+        top: 20%;
+
+    }
+    
+    .gg {
+        width: 60%;
+        height: 700px;
+        position: absolute;
+        float: right;
+        background: url(download.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-left: 200px solid white;
+        border-top: 700px solid transparent;
+        background-attachment: fixed;
+    }
+    div{
+        width: 100%;
+        height: 1200px;
+        position: relative;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="class">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto deleniti provident quaerat odit dignissimos distinctio veritatis quas nisi, esse quis quos, sapiente doloribus amet magnam exercitationem alias dolores? Asperiores, alias!
+    </div><br><br><br>
+    <div>
+    <div class="gg"></div></div>
+</body>
+</html>

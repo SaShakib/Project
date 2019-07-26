@@ -1,0 +1,49 @@
+
+    body {
+    background: #dcf6ff;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.inner {
+        background: #09ff00;
+        padding: 1em;
+        border-radius: 10px;
+        width: 250px;
+        clip-path: circle(10% at 90% 20%);
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+    }
+    .inner:hover {
+        clip-path: circle(75%);
+        background: #00B6FF;
+    }
+    .inner h1 {
+        color: white;
+        margin: 0;
+    }
+   .inner p {
+        color: white;
+        font-size: .8em;
+    }
+
+ span {
+     float: right;
+     color: white;
+     justify-content: center;
+     align-items: center;
+     left: -10px;
+     top: 3px;
+     font-weight: bold;
+     transition: color .5s;
+     position: relative;
+     margin-left: 4%;
+     visibility: visible;
+ }
+ .container .inner:hover > span {
+     color: transparent;
+ }
